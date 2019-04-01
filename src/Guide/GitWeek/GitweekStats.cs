@@ -49,7 +49,7 @@ namespace Guide.GitWeek
                 .ToArray();
 
             var gitweekCommits = user.CommitsByDate.Where(c =>
-                c.Key.Date > GitweekStart.Date)
+                c.Key.Date >= GitweekStart.Date)
                 .ToArray();
             
             sb.AppendLine($"__**{user.GitHubUsername}**__");
