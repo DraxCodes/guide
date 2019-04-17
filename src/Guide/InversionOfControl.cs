@@ -10,6 +10,7 @@ using Lamar;
 using Guide.Services;
 using Octokit;
 using IConnection = Guide.Connection.IConnection;
+using Guide.HelperRole;
 
 namespace Guide
 {
@@ -50,6 +51,7 @@ namespace Guide
                 c.ForSingletonOf<WelcomeMessageService>().UseIfNone<WelcomeMessageService>();
                 c.ForSingletonOf<DiscordSocketClient>().UseIfNone(DiscordSocketClientFactory.GetDefault());
                 c.ForSingletonOf<GitHubClient>().UseIfNone(GithubClientFactory.GetDefault());
+                c.ForSingletonOf<HelperRoleHandler>();
             });
         }
     }
