@@ -14,7 +14,8 @@ namespace Guide
         public const ulong WaitingRoomId = 560835975052263434;
         public const ulong GeneralId = 538334113501937667;
         public const ulong MemberRoleId = 560836164647649329;
-        public const ulong HelperRoleId = 560836219953479681;
+        public const ulong HelperRoleId = 567488325154373698;
+        public const ulong HelpVoiceChannelId = 567978164303691785;
 #else
         public const ulong ScoreboardId = 560870504144306188;
         public const ulong TutorialGuildId = 377879473158356992;
@@ -22,6 +23,7 @@ namespace Guide
         public const ulong GeneralId = 377879473644765185;
         public const ulong MemberRoleId = 411865173318696961;
         public const ulong HelperRoleId = 480033369812500491;
+        public const ulong HelpChannelID = 567969831941439508;
 #endif
 
         public const string PKWelcomeTitle = "WELCOME_EMBED_TITLE";
