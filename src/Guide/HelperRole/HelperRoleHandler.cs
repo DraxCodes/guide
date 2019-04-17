@@ -12,7 +12,7 @@ namespace Guide.HelperRole
             _client = client;
         }
 
-        public void InitializeAsync()
+        public void Initialize()
         {
             _client.UserVoiceStateUpdated += UserVoiceChannelUpdate;
         }

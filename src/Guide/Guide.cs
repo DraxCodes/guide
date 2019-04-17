@@ -25,7 +25,7 @@ namespace Guide
         {
             await connection.Connect();
             await commandHandler.InitializeAsync();
-            helperRoleHandler.InitializeAsync();
+            helperRoleHandler.Initialize();
             await Task.Delay(-1);
         }
     }
